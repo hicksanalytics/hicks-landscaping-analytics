@@ -240,6 +240,7 @@ group by 1,2 order by quoted_value desc
 OUT.mkdir(exist_ok=True)
 
 exports = {
+    "job_profitability": "analytics.fct_job_profitability",
     "executive_monthly": "analytics.mart_executive_monthly",
     "crew_performance": "analytics.mart_crew_performance",
     "service_performance": "analytics.mart_service_performance",
