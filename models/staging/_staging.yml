@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+  - name: stg_services
+    columns:
+      - name: service_id
+        tests: [unique, not_null]
+  - name: stg_crews
+    columns:
+      - name: crew_id
+        tests: [unique, not_null]
+  - name: stg_employees
+    columns:
+      - name: employee_id
+        tests: [unique, not_null]
+  - name: stg_estimates
+    columns:
+      - name: estimate_id
+        tests: [unique, not_null]
+  - name: stg_jobs
+    columns:
+      - name: job_id
+        tests: [unique, not_null]
+  - name: stg_invoices
+    columns:
+      - name: invoice_id
+        tests: [unique, not_null]

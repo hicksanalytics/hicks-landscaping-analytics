@@ -1,0 +1,6 @@
+crew_id,crew_name,home_base,supervisor,crew_size,labor_efficiency_factor
+1,Crew A,Nolensville,Carlos Martinez,3,0.95
+2,Crew B,Franklin,Marcus Reed,3,1.0
+3,Crew C,Brentwood,Derek Wilson,3,1.16
+4,Crew D,Spring Hill,Luis Hernandez,3,0.92
+5,Crew E,Nashville,Anthony Brooks,3,1.03

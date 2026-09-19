@@ -1,0 +1,20 @@
+select
+    cast(job_id as integer) as job_id,
+    try_cast(nullif(estimate_id, '') as integer) as estimate_id,
+    cast(customer_id as integer) as customer_id,
+    cast(service_id as integer) as service_id,
+    cast(crew_id as integer) as crew_id,
+    cast(scheduled_date as date) as scheduled_date,
+    cast(completed_date as date) as completed_date,
+    job_status,
+    city,
+    cast(billed_revenue as double) as billed_revenue,
+    cast(estimated_labor_hours as double) as estimated_labor_hours,
+    cast(actual_labor_hours as double) as actual_labor_hours,
+    cast(estimated_material_cost as double) as estimated_material_cost,
+    cast(actual_material_cost as double) as actual_material_cost,
+    cast(rework_flag as integer) as rework_flag,
+    cast(weather_delay_flag as integer) as weather_delay_flag,
+    cast(travel_minutes as integer) as travel_minutes,
+    cast(customer_rating as double) as customer_rating
+from {{ ref('jobs') }}

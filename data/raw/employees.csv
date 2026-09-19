@@ -1,0 +1,16 @@
+employee_id,employee_name,crew_id,role,hourly_rate,hire_date
+1001,Mason Parker,1,Crew Lead,24.49,2024-08-12
+1002,Logan Morgan,1,Landscape Technician,21.2,2024-01-30
+1003,Caleb Bennett,1,Landscape Technician,21.5,2023-07-01
+1004,Mason Flores,2,Crew Lead,21.92,2023-03-26
+1005,Liam Reed,2,Landscape Technician,20.2,2024-10-07
+1006,Henry Turner,2,Landscape Technician,19.97,2024-12-08
+1007,Ethan Collins,3,Crew Lead,22.64,2024-03-26
+1008,Aiden Morgan,3,Landscape Technician,21.24,2023-11-30
+1009,Mateo Brooks,3,Landscape Technician,20.11,2023-12-29
+1010,Ethan Flores,4,Crew Lead,24.75,2025-01-10
+1011,Aiden Flores,4,Landscape Technician,18.63,2023-03-24
+1012,Henry Morgan,4,Landscape Technician,18.47,2024-05-14
+1013,Levi Reed,5,Crew Lead,25.41,2023-09-07
+1014,Logan Parker,5,Landscape Technician,19.7,2024-07-22
+1015,Jackson Bailey,5,Landscape Technician,18.91,2023-03-03

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: customers
+      - name: services
+      - name: crews
+      - name: employees
+      - name: estimates
+      - name: jobs
+      - name: job_labor
+      - name: invoices
+      - name: weather_daily

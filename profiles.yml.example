@@ -1,0 +1,7 @@
+hicks_landscaping_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ./hicks_landscaping.duckdb
+      threads: 4

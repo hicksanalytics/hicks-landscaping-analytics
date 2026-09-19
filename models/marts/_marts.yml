@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: fct_job_profitability
+    description: "One row per completed landscaping job with revenue, cost, profitability, estimating variance, crew, customer, and service attributes."
+    columns:
+      - name: job_id
+        tests: [unique, not_null]
+      - name: customer_id
+        tests: [not_null]
+      - name: service_id
+        tests: [not_null]
+      - name: crew_id
+        tests: [not_null]
+      - name: billed_revenue
+        tests: [not_null]
+
+  - name: mart_executive_monthly
+    description: "Monthly owner-level KPI scorecard."
+    columns:
+      - name: completed_month
+        tests: [unique, not_null]
+
+  - name: mart_crew_performance
+    description: "Crew efficiency, margin, rework, travel, and customer-rating metrics."
+    columns:
+      - name: crew_id
+        tests: [unique, not_null]
+
+  - name: mart_service_performance
+    description: "Revenue and profitability by service line."
+    columns:
+      - name: service_id
+        tests: [unique, not_null]
+
+  - name: mart_city_performance
+    description: "Performance by Middle Tennessee service area."
+    columns:
+      - name: city
+        tests: [unique, not_null]
+
+  - name: mart_estimate_performance
+    description: "Sales conversion and quoted value by service."
+    columns:
+      - name: service_id
+        tests: [unique, not_null]

@@ -1,0 +1,421 @@
+customer_id,customer_name,customer_type,city,zip_code,signup_date,status,contract_type,acquisition_channel,property_tier
+1,Carter Cooper,Residential,Nashville,37211,2021-07-20,Active,Recurring,Google Search,Standard
+2,Lucas Hayes,Residential,Brentwood,37027,2023-09-13,Active,Recurring,Referral,Standard
+3,Carter Murphy,Residential,Nolensville,37135,2021-07-24,Active,Recurring,Google Search,Premium
+4,Liam Ross,Residential,Spring Hill,37174,2022-04-09,Active,Recurring,Website,Premium
+5,Mason Price,Residential,Nolensville,37135,2022-01-16,Active,One-time,Google Search,Premium
+6,Wyatt Brooks,Residential,Spring Hill,37174,2023-03-16,Active,Recurring,Google Search,Standard
+7,Logan Turner,Residential,Brentwood,37027,2022-12-24,Active,Recurring,Facebook,Standard
+8,Levi Flores,Residential,Nolensville,37135,2021-07-04,Active,One-time,Referral,Standard
+9,Mason Ross,Residential,Franklin,37064,2024-03-29,Active,Recurring,Facebook,Standard
+10,Liam Flores,Residential,Franklin,37064,2023-11-11,Active,Recurring,Google Search,Standard
+11,Owen Brooks,Residential,Nolensville,37135,2024-05-29,Active,Recurring,Google Search,Standard
+12,Wyatt Reed,Residential,Franklin,37064,2022-11-04,Inactive,Recurring,Google Search,Premium
+13,Aiden Collins,Residential,Brentwood,37027,2023-09-19,Active,Recurring,Homebuilder/HOA,Standard
+14,Oak Retail Center,Commercial,Franklin,37064,2023-05-31,Active,Recurring,Referral,Standard
+15,Caleb Ward,Residential,Nolensville,37135,2021-10-16,Active,Recurring,Nextdoor,Standard
+16,Liam Morgan,Residential,Brentwood,37027,2022-10-07,Active,Recurring,Referral,Standard
+17,Cumberland Builders,Commercial,Nolensville,37135,2024-09-14,Inactive,Recurring,Facebook,Standard
+18,Elijah Cooper,Residential,Franklin,37064,2023-12-15,Active,Recurring,Homebuilder/HOA,Standard
+19,Levi Price,Residential,Franklin,37064,2024-12-03,Active,Recurring,Website,Standard
+20,Jackson Price,Residential,Franklin,37064,2021-12-24,Active,One-time,Google Search,Standard
+21,River Academy,Commercial,Brentwood,37027,2023-06-11,Active,Recurring,Facebook,Premium
+22,Fox Cafe,Commercial,Spring Hill,37174,2022-10-25,Active,Recurring,Google Search,Standard
+23,Liam Brooks,Residential,Spring Hill,37174,2021-09-29,Active,One-time,Referral,Standard
+24,Jackson Flores,Residential,Franklin,37064,2024-05-12,Inactive,Recurring,Google Search,Premium
+25,Caleb Foster,Residential,Spring Hill,37174,2024-06-02,Active,Recurring,Website,Premium
+26,Levi Ross,Residential,Brentwood,37027,2021-11-06,Inactive,Recurring,Nextdoor,Standard
+27,Logan Flores,Residential,Nolensville,37135,2024-09-01,Active,Recurring,Google Search,Premium
+28,Caleb Gray,Residential,Nolensville,37135,2021-06-14,Active,Recurring,Homebuilder/HOA,Standard
+29,Cumberland Dental,Commercial,Franklin,37064,2022-03-28,Active,Recurring,Facebook,Premium
+30,Caleb Turner,Residential,Brentwood,37027,2021-12-05,Active,Recurring,Nextdoor,Standard
+31,Carter Ross,Residential,Nashville,37211,2022-02-21,Active,Recurring,Referral,Estate/Commercial
+32,Logan Collins,Residential,Franklin,37064,2023-03-25,Active,Recurring,Yard Sign,Standard
+33,Aiden Reed,Residential,Franklin,37064,2024-11-30,Active,One-time,Facebook,Standard
+34,Harpeth Apartments,Commercial,Spring Hill,37174,2022-08-23,Active,Recurring,Website,Standard
+35,Carter Hayes,Residential,Brentwood,37027,2024-08-13,Active,Recurring,Facebook,Standard
+36,James Ross,Residential,Brentwood,37027,2024-01-11,Active,Recurring,Google Search,Premium
+37,Harpeth Retail Center,Commercial,Nolensville,37135,2023-05-22,Active,Recurring,Facebook,Standard
+38,Levi Bennett,Residential,Nolensville,37135,2022-11-15,Active,Recurring,Referral,Standard
+39,Logan Bennett,Residential,Nolensville,37135,2024-05-31,Active,Recurring,Google Search,Standard
+40,Caleb Flores,Residential,Franklin,37064,2022-05-21,Active,Recurring,Website,Standard
+41,Jack Cooper,Residential,Franklin,37064,2021-11-21,Active,Recurring,Referral,Standard
+42,Luke Bailey,Residential,Nolensville,37135,2024-08-16,Active,Recurring,Website,Premium
+43,Luke Ross,Residential,Nashville,37211,2024-10-26,Active,Recurring,Website,Standard
+44,Wyatt Morgan,Residential,Brentwood,37027,2021-07-24,Active,Recurring,Referral,Standard
+45,Lucas Ramos,Residential,Nolensville,37135,2021-12-14,Active,Recurring,Referral,Standard
+46,James Collins,Residential,Franklin,37064,2024-05-09,Inactive,One-time,Referral,Standard
+47,Noah Murphy,Residential,Franklin,37064,2022-07-25,Active,Recurring,Website,Standard
+48,Lucas Foster,Residential,Brentwood,37027,2024-05-17,Active,Recurring,Google Search,Standard
+49,Meadow Retail Center,Commercial,Brentwood,37027,2022-05-22,Inactive,Recurring,Nextdoor,Standard
+50,Henry Brooks,Residential,Nashville,37211,2023-07-23,Inactive,One-time,Website,Standard
+51,Cedar Fitness,Commercial,Brentwood,37027,2022-11-22,Active,Recurring,Facebook,Standard
+52,Elijah Brooks,Residential,Franklin,37064,2022-05-31,Active,Recurring,Website,Estate/Commercial
+53,Creek Clinic,Commercial,Nolensville,37135,2022-04-14,Active,Recurring,Google Search,Premium
+54,Logan Flores,Residential,Brentwood,37027,2022-05-18,Active,Recurring,Nextdoor,Standard
+55,Cumberland Dental,Commercial,Nolensville,37135,2021-10-22,Active,Recurring,Website,Premium
+56,Mason Flores,Residential,Brentwood,37027,2023-09-20,Inactive,Recurring,Referral,Premium
+57,Meadow Cafe,Commercial,Nashville,37211,2022-03-24,Active,Recurring,Website,Standard
+58,Meadow Retail Center,Commercial,Brentwood,37027,2024-08-30,Active,Recurring,Website,Standard
+59,Carter Murphy,Residential,Franklin,37064,2023-05-22,Inactive,Recurring,Website,Premium
+60,Owen Bailey,Residential,Franklin,37064,2024-11-06,Active,Recurring,Homebuilder/HOA,Standard
+61,Stone Properties,Commercial,Nashville,37211,2024-08-16,Active,Recurring,Google Search,Standard
+62,Ethan Cooper,Residential,Nashville,37211,2021-10-07,Active,Recurring,Google Search,Premium
+63,Mateo Foster,Residential,Franklin,37064,2024-11-15,Inactive,One-time,Google Search,Premium
+64,Mateo Murphy,Residential,Brentwood,37027,2023-06-01,Active,Recurring,Google Search,Premium
+65,Owen Ramos,Residential,Brentwood,37027,2024-11-10,Active,Recurring,Google Search,Standard
+66,Hudson Hayes,Residential,Spring Hill,37174,2022-05-03,Active,Recurring,Google Search,Premium
+67,Lucas Price,Residential,Spring Hill,37174,2022-10-29,Inactive,Recurring,Google Search,Standard
+68,Jackson Flores,Residential,Spring Hill,37174,2021-11-24,Active,One-time,Google Search,Standard
+69,Mateo Parker,Residential,Brentwood,37027,2022-12-19,Active,Recurring,Website,Standard
+70,Pine Market,Commercial,Franklin,37064,2021-07-16,Active,Recurring,Referral,Standard
+71,James Parker,Residential,Brentwood,37027,2024-07-11,Active,Recurring,Referral,Standard
+72,Mason Price,Residential,Nolensville,37135,2023-04-22,Active,Recurring,Google Search,Premium
+73,Owen Morgan,Residential,Brentwood,37027,2023-04-26,Active,One-time,Referral,Standard
+74,Noah Morgan,Residential,Brentwood,37027,2021-07-31,Inactive,One-time,Nextdoor,Standard
+75,Luke Collins,Residential,Brentwood,37027,2023-03-07,Active,One-time,Referral,Standard
+76,Liam Diaz,Residential,Nolensville,37135,2022-01-29,Active,Recurring,Referral,Standard
+77,Cumberland Builders,Commercial,Spring Hill,37174,2024-10-21,Active,Recurring,Website,Standard
+78,Meadow Clinic,Commercial,Brentwood,37027,2023-03-13,Active,One-time,Homebuilder/HOA,Standard
+79,Lucas Bennett,Residential,Brentwood,37027,2023-09-15,Active,Recurring,Referral,Standard
+80,James Flores,Residential,Brentwood,37027,2022-06-22,Active,One-time,Website,Premium
+81,Stone Cafe,Commercial,Nashville,37211,2024-05-31,Active,Recurring,Referral,Premium
+82,Mateo Brooks,Residential,Franklin,37064,2021-09-25,Active,One-time,Google Search,Standard
+83,Henry Hayes,Residential,Franklin,37064,2024-06-20,Active,Recurring,Facebook,Standard
+84,Jack Hayes,Residential,Spring Hill,37174,2023-01-09,Active,Recurring,Facebook,Standard
+85,Owen Ross,Residential,Brentwood,37027,2022-09-11,Active,Recurring,Website,Premium
+86,Wyatt Cole,Residential,Brentwood,37027,2023-12-02,Active,Recurring,Website,Standard
+87,Mateo Cole,Residential,Nolensville,37135,2022-11-30,Active,Recurring,Website,Standard
+88,Cedar Academy,Commercial,Nolensville,37135,2022-11-03,Active,Recurring,Referral,Standard
+89,Caleb Collins,Residential,Franklin,37064,2021-09-14,Active,One-time,Facebook,Standard
+90,Carter Parker,Residential,Spring Hill,37174,2023-03-04,Active,One-time,Homebuilder/HOA,Standard
+91,Luke Flores,Residential,Spring Hill,37174,2022-06-10,Inactive,Recurring,Yard Sign,Estate/Commercial
+92,Caleb Reed,Residential,Franklin,37064,2021-07-20,Active,Recurring,Referral,Premium
+93,Caleb Parker,Residential,Franklin,37064,2022-05-03,Active,One-time,Referral,Premium
+94,Liam Turner,Residential,Nolensville,37135,2023-01-30,Active,One-time,Website,Standard
+95,Maple Builders,Commercial,Nolensville,37135,2022-02-24,Active,Recurring,Facebook,Premium
+96,Noah Gray,Residential,Spring Hill,37174,2023-08-24,Active,Recurring,Google Search,Standard
+97,Liam Ramos,Residential,Brentwood,37027,2024-10-30,Active,Recurring,Google Search,Premium
+98,Caleb Cooper,Residential,Franklin,37064,2023-02-20,Active,Recurring,Website,Standard
+99,James Hayes,Residential,Franklin,37064,2023-10-07,Active,Recurring,Google Search,Premium
+100,Jack Bennett,Residential,Spring Hill,37174,2022-09-25,Active,Recurring,Referral,Estate/Commercial
+101,Luke Reed,Residential,Spring Hill,37174,2023-12-13,Active,One-time,Referral,Standard
+102,Creek Academy,Commercial,Franklin,37064,2023-10-03,Active,Recurring,Google Search,Standard
+103,James Bailey,Residential,Franklin,37064,2024-04-14,Active,Recurring,Nextdoor,Premium
+104,Aiden Murphy,Residential,Franklin,37064,2021-10-31,Active,Recurring,Yard Sign,Standard
+105,Mason Bailey,Residential,Franklin,37064,2021-10-08,Active,Recurring,Referral,Standard
+106,Wyatt Bailey,Residential,Brentwood,37027,2022-12-03,Inactive,Recurring,Referral,Premium
+107,Henry Cole,Residential,Spring Hill,37174,2022-03-20,Active,Recurring,Website,Standard
+108,Noah Murphy,Residential,Brentwood,37027,2022-03-25,Inactive,Recurring,Referral,Standard
+109,Noah Ross,Residential,Nolensville,37135,2023-03-07,Active,Recurring,Google Search,Standard
+110,Hearth Market,Commercial,Nolensville,37135,2022-09-28,Active,Recurring,Google Search,Standard
+111,Mason Morgan,Residential,Franklin,37064,2023-08-21,Active,Recurring,Google Search,Standard
+112,Aiden Hayes,Residential,Brentwood,37027,2024-11-24,Active,One-time,Referral,Standard
+113,Jack Cole,Residential,Franklin,37064,2023-10-26,Active,Recurring,Referral,Standard
+114,Stone Fitness,Commercial,Nashville,37211,2023-03-30,Active,Recurring,Nextdoor,Standard
+115,Stone Cafe,Commercial,Nashville,37211,2023-05-13,Active,Recurring,Google Search,Standard
+116,Levi Morgan,Residential,Franklin,37064,2024-03-08,Active,Recurring,Website,Standard
+117,Liam Cole,Residential,Nolensville,37135,2022-11-26,Inactive,Recurring,Website,Standard
+118,Jack Murphy,Residential,Brentwood,37027,2024-09-20,Active,Recurring,Website,Standard
+119,Noah Flores,Residential,Franklin,37064,2023-09-20,Active,Recurring,Referral,Standard
+120,Ethan Collins,Residential,Nolensville,37135,2022-08-29,Active,Recurring,Nextdoor,Premium
+121,Harpeth Academy,Commercial,Brentwood,37027,2022-06-04,Active,Recurring,Google Search,Standard
+122,Stone Fitness,Commercial,Nashville,37211,2021-09-18,Active,Recurring,Homebuilder/HOA,Premium
+123,James Diaz,Residential,Nashville,37211,2024-12-11,Active,Recurring,Facebook,Standard
+124,Aiden Ross,Residential,Franklin,37064,2021-07-12,Active,Recurring,Google Search,Premium
+125,Noah Foster,Residential,Franklin,37064,2022-01-10,Active,Recurring,Yard Sign,Premium
+126,Elijah Parker,Residential,Brentwood,37027,2022-06-14,Active,Recurring,Referral,Premium
+127,Elijah Cooper,Residential,Brentwood,37027,2021-07-03,Active,One-time,Google Search,Premium
+128,Levi Ward,Residential,Nolensville,37135,2024-01-22,Inactive,One-time,Google Search,Standard
+129,Henry Flores,Residential,Franklin,37064,2024-05-15,Active,Recurring,Website,Premium
+130,James Bennett,Residential,Spring Hill,37174,2021-08-16,Active,One-time,Google Search,Premium
+131,Aiden Ward,Residential,Nolensville,37135,2022-12-23,Inactive,Recurring,Nextdoor,Standard
+132,Aiden Turner,Residential,Spring Hill,37174,2022-10-07,Active,Recurring,Referral,Standard
+133,Luke Flores,Residential,Brentwood,37027,2023-08-07,Active,Recurring,Referral,Standard
+134,Noah Gray,Residential,Nolensville,37135,2023-11-28,Active,One-time,Referral,Standard
+135,Noah Turner,Residential,Spring Hill,37174,2022-07-27,Active,Recurring,Referral,Standard
+136,Luke Diaz,Residential,Franklin,37064,2024-07-19,Active,One-time,Referral,Standard
+137,Mateo Ramos,Residential,Nolensville,37135,2024-11-04,Active,Recurring,Referral,Premium
+138,Jackson Turner,Residential,Nashville,37211,2023-09-28,Active,Recurring,Google Search,Standard
+139,Mateo Collins,Residential,Nolensville,37135,2021-08-12,Active,Recurring,Facebook,Standard
+140,Jackson Collins,Residential,Nolensville,37135,2023-09-02,Active,Recurring,Nextdoor,Standard
+141,Hudson Collins,Residential,Spring Hill,37174,2022-12-04,Active,One-time,Google Search,Premium
+142,Caleb Ross,Residential,Nolensville,37135,2024-05-15,Active,Recurring,Google Search,Standard
+143,Mason Reed,Residential,Spring Hill,37174,2021-12-28,Active,Recurring,Website,Standard
+144,Caleb Reed,Residential,Franklin,37064,2024-11-15,Active,Recurring,Website,Standard
+145,Hudson Turner,Residential,Brentwood,37027,2021-08-28,Active,Recurring,Referral,Estate/Commercial
+146,Hudson Collins,Residential,Franklin,37064,2024-06-25,Active,Recurring,Yard Sign,Standard
+147,Henry Reed,Residential,Nolensville,37135,2024-06-03,Active,Recurring,Referral,Standard
+148,Luke Ramos,Residential,Brentwood,37027,2022-01-06,Active,Recurring,Website,Standard
+149,Carter Cooper,Residential,Nashville,37211,2021-06-26,Active,Recurring,Google Search,Standard
+150,Aiden Gray,Residential,Spring Hill,37174,2022-01-22,Active,Recurring,Website,Standard
+151,Caleb Cooper,Residential,Nashville,37211,2024-04-01,Active,Recurring,Google Search,Standard
+152,Elijah Bennett,Residential,Brentwood,37027,2024-06-16,Active,Recurring,Referral,Standard
+153,Owen Cole,Residential,Brentwood,37027,2021-09-21,Active,Recurring,Homebuilder/HOA,Premium
+154,River Builders,Commercial,Spring Hill,37174,2021-06-27,Inactive,Recurring,Website,Standard
+155,Ethan Cole,Residential,Brentwood,37027,2023-05-28,Active,Recurring,Website,Standard
+156,Hudson Reed,Residential,Brentwood,37027,2022-11-27,Active,Recurring,Website,Standard
+157,Mason Collins,Residential,Franklin,37064,2023-03-12,Active,Recurring,Google Search,Standard
+158,Magnolia Academy,Commercial,Brentwood,37027,2021-11-05,Active,Recurring,Google Search,Standard
+159,Magnolia Cafe,Commercial,Brentwood,37027,2023-11-04,Active,Recurring,Referral,Premium
+160,Lucas Price,Residential,Nashville,37211,2021-08-02,Active,One-time,Nextdoor,Standard
+161,Liam Morgan,Residential,Brentwood,37027,2023-01-28,Active,Recurring,Homebuilder/HOA,Standard
+162,Wyatt Ward,Residential,Franklin,37064,2021-07-30,Active,One-time,Referral,Standard
+163,Jackson Cole,Residential,Brentwood,37027,2022-10-31,Active,Recurring,Facebook,Premium
+164,Jack Ward,Residential,Nashville,37211,2021-09-03,Active,Recurring,Nextdoor,Standard
+165,Hudson Ramos,Residential,Franklin,37064,2021-07-10,Active,Recurring,Facebook,Standard
+166,Ethan Flores,Residential,Franklin,37064,2022-08-31,Active,Recurring,Website,Standard
+167,Owen Murphy,Residential,Spring Hill,37174,2022-02-06,Active,Recurring,Google Search,Standard
+168,Lucas Cooper,Residential,Nashville,37211,2021-08-21,Inactive,Recurring,Referral,Estate/Commercial
+169,Cedar Builders,Commercial,Nolensville,37135,2024-06-15,Active,Recurring,Website,Standard
+170,Jack Bennett,Residential,Nolensville,37135,2022-12-15,Active,Recurring,Referral,Premium
+171,Logan Ward,Residential,Brentwood,37027,2024-05-17,Active,Recurring,Homebuilder/HOA,Premium
+172,Hudson Hayes,Residential,Nashville,37211,2023-12-12,Active,Recurring,Referral,Standard
+173,Carter Hayes,Residential,Spring Hill,37174,2023-05-13,Active,Recurring,Website,Premium
+174,Logan Ramos,Residential,Spring Hill,37174,2024-03-19,Active,One-time,Google Search,Standard
+175,Creek Cafe,Commercial,Brentwood,37027,2021-10-29,Active,Recurring,Google Search,Premium
+176,Noah Collins,Residential,Nolensville,37135,2022-05-07,Active,Recurring,Google Search,Premium
+177,Henry Cooper,Residential,Brentwood,37027,2022-01-27,Active,Recurring,Google Search,Standard
+178,Noah Parker,Residential,Spring Hill,37174,2023-02-01,Active,Recurring,Referral,Standard
+179,River Church,Commercial,Spring Hill,37174,2022-05-02,Active,Recurring,Google Search,Premium
+180,Logan Foster,Residential,Franklin,37064,2021-12-19,Active,Recurring,Facebook,Premium
+181,Levi Flores,Residential,Nashville,37211,2024-07-07,Active,Recurring,Google Search,Standard
+182,Henry Flores,Residential,Spring Hill,37174,2022-05-08,Active,Recurring,Website,Standard
+183,Ethan Murphy,Residential,Brentwood,37027,2023-01-16,Active,Recurring,Referral,Premium
+184,Liam Bennett,Residential,Brentwood,37027,2022-04-27,Active,Recurring,Yard Sign,Premium
+185,Magnolia Dental,Commercial,Nolensville,37135,2024-01-16,Active,One-time,Google Search,Standard
+186,Wyatt Reed,Residential,Nashville,37211,2022-01-18,Active,Recurring,Website,Standard
+187,Jack Bennett,Residential,Nolensville,37135,2023-04-24,Active,Recurring,Google Search,Standard
+188,Hill Church,Commercial,Nolensville,37135,2022-09-07,Active,Recurring,Referral,Standard
+189,Noah Ward,Residential,Franklin,37064,2021-12-10,Inactive,One-time,Google Search,Standard
+190,River Dental,Commercial,Nolensville,37135,2023-05-15,Active,Recurring,Google Search,Premium
+191,Wyatt Hayes,Residential,Brentwood,37027,2022-10-19,Active,Recurring,Google Search,Estate/Commercial
+192,Caleb Murphy,Residential,Brentwood,37027,2021-09-17,Active,Recurring,Homebuilder/HOA,Estate/Commercial
+193,Wyatt Flores,Residential,Franklin,37064,2024-05-25,Active,Recurring,Facebook,Standard
+194,Henry Brooks,Residential,Nolensville,37135,2024-11-22,Active,Recurring,Referral,Standard
+195,Lucas Morgan,Residential,Nashville,37211,2022-11-27,Active,Recurring,Referral,Standard
+196,Jackson Foster,Residential,Franklin,37064,2023-10-04,Active,Recurring,Referral,Standard
+197,Henry Parker,Residential,Nolensville,37135,2023-01-12,Active,Recurring,Referral,Premium
+198,Jackson Gray,Residential,Franklin,37064,2021-07-20,Active,Recurring,Facebook,Estate/Commercial
+199,Henry Morgan,Residential,Franklin,37064,2021-09-14,Active,Recurring,Yard Sign,Premium
+200,Willow Church,Commercial,Brentwood,37027,2023-10-23,Active,Recurring,Website,Standard
+201,Mason Ross,Residential,Spring Hill,37174,2022-05-11,Active,Recurring,Website,Standard
+202,Noah Diaz,Residential,Nolensville,37135,2024-06-21,Inactive,One-time,Yard Sign,Premium
+203,Caleb Hayes,Residential,Nolensville,37135,2023-03-28,Active,Recurring,Website,Premium
+204,Levi Price,Residential,Franklin,37064,2022-09-25,Active,Recurring,Facebook,Standard
+205,Owen Morgan,Residential,Nolensville,37135,2021-07-05,Active,Recurring,Website,Premium
+206,Caleb Parker,Residential,Nolensville,37135,2023-03-15,Active,Recurring,Nextdoor,Standard
+207,Fox Academy,Commercial,Brentwood,37027,2023-05-10,Active,Recurring,Referral,Standard
+208,Elijah Gray,Residential,Nolensville,37135,2024-05-05,Active,Recurring,Website,Estate/Commercial
+209,Logan Collins,Residential,Nolensville,37135,2024-08-29,Active,Recurring,Website,Standard
+210,Logan Price,Residential,Nolensville,37135,2023-09-09,Active,Recurring,Homebuilder/HOA,Standard
+211,Fox Clinic,Commercial,Nashville,37211,2021-06-20,Active,Recurring,Website,Standard
+212,Hill Retail Center,Commercial,Spring Hill,37174,2022-06-08,Active,Recurring,Website,Standard
+213,Jack Gray,Residential,Nolensville,37135,2023-02-06,Active,Recurring,Referral,Estate/Commercial
+214,Ethan Murphy,Residential,Nolensville,37135,2024-07-20,Active,One-time,Website,Estate/Commercial
+215,Logan Foster,Residential,Nolensville,37135,2022-06-26,Active,Recurring,Yard Sign,Estate/Commercial
+216,Luke Cooper,Residential,Spring Hill,37174,2023-05-19,Active,Recurring,Referral,Standard
+217,Noah Murphy,Residential,Nolensville,37135,2023-05-19,Active,One-time,Referral,Standard
+218,Hudson Bailey,Residential,Nolensville,37135,2023-12-31,Inactive,Recurring,Google Search,Estate/Commercial
+219,River Apartments,Commercial,Franklin,37064,2021-07-13,Active,Recurring,Google Search,Standard
+220,Carter Bailey,Residential,Nashville,37211,2022-08-27,Active,One-time,Google Search,Premium
+221,Hudson Ramos,Residential,Nashville,37211,2022-10-11,Active,Recurring,Google Search,Estate/Commercial
+222,Mason Ross,Residential,Franklin,37064,2024-07-25,Active,Recurring,Google Search,Premium
+223,Luke Hayes,Residential,Franklin,37064,2023-01-30,Inactive,Recurring,Nextdoor,Standard
+224,Logan Turner,Residential,Nolensville,37135,2023-02-11,Inactive,Recurring,Yard Sign,Standard
+225,Henry Parker,Residential,Franklin,37064,2023-02-26,Active,Recurring,Google Search,Standard
+226,Mateo Flores,Residential,Nolensville,37135,2024-12-10,Active,Recurring,Website,Premium
+227,Aiden Price,Residential,Brentwood,37027,2023-05-03,Active,Recurring,Referral,Standard
+228,Henry Collins,Residential,Franklin,37064,2022-03-27,Active,Recurring,Homebuilder/HOA,Premium
+229,Carter Brooks,Residential,Brentwood,37027,2022-08-12,Active,Recurring,Referral,Standard
+230,Carter Murphy,Residential,Nolensville,37135,2024-08-07,Active,Recurring,Website,Estate/Commercial
+231,Owen Ramos,Residential,Nolensville,37135,2022-05-06,Active,Recurring,Referral,Premium
+232,Owen Bailey,Residential,Spring Hill,37174,2022-05-01,Active,Recurring,Referral,Standard
+233,Carter Ross,Residential,Nolensville,37135,2023-09-25,Active,Recurring,Nextdoor,Premium
+234,Owen Flores,Residential,Spring Hill,37174,2024-04-09,Active,Recurring,Website,Standard
+235,Lucas Hayes,Residential,Franklin,37064,2023-05-30,Active,Recurring,Google Search,Standard
+236,Henry Ross,Residential,Nolensville,37135,2022-07-05,Active,Recurring,Referral,Estate/Commercial
+237,Jackson Brooks,Residential,Franklin,37064,2023-12-05,Active,One-time,Website,Premium
+238,Luke Ward,Residential,Nashville,37211,2023-09-23,Active,Recurring,Google Search,Standard
+239,Elijah Flores,Residential,Franklin,37064,2023-05-13,Active,One-time,Yard Sign,Standard
+240,Ethan Ward,Residential,Spring Hill,37174,2022-04-06,Active,One-time,Website,Standard
+241,Owen Hayes,Residential,Franklin,37064,2021-06-18,Active,Recurring,Website,Standard
+242,Henry Reed,Residential,Nolensville,37135,2022-05-07,Active,Recurring,Website,Premium
+243,Hudson Gray,Residential,Nolensville,37135,2024-10-18,Inactive,Recurring,Website,Standard
+244,Levi Cole,Residential,Brentwood,37027,2023-07-05,Active,One-time,Referral,Standard
+245,Levi Hayes,Residential,Franklin,37064,2024-03-02,Active,Recurring,Website,Premium
+246,Magnolia Properties,Commercial,Franklin,37064,2022-12-20,Active,Recurring,Homebuilder/HOA,Standard
+247,Meadow Apartments,Commercial,Spring Hill,37174,2022-12-21,Active,Recurring,Referral,Standard
+248,Jackson Collins,Residential,Nolensville,37135,2023-06-16,Active,Recurring,Website,Estate/Commercial
+249,Owen Ramos,Residential,Franklin,37064,2023-04-19,Active,Recurring,Website,Premium
+250,Hudson Gray,Residential,Nolensville,37135,2024-07-15,Active,Recurring,Google Search,Premium
+251,Liam Morgan,Residential,Nashville,37211,2024-04-16,Active,Recurring,Referral,Standard
+252,Owen Morgan,Residential,Nashville,37211,2021-09-11,Active,Recurring,Website,Standard
+253,Aiden Bennett,Residential,Brentwood,37027,2024-03-15,Active,One-time,Google Search,Premium
+254,Oak Dental,Commercial,Franklin,37064,2021-12-13,Active,Recurring,Referral,Standard
+255,Caleb Diaz,Residential,Spring Hill,37174,2021-12-01,Active,Recurring,Nextdoor,Standard
+256,Hudson Collins,Residential,Spring Hill,37174,2024-06-06,Active,Recurring,Referral,Standard
+257,Levi Bailey,Residential,Brentwood,37027,2022-05-03,Inactive,One-time,Referral,Standard
+258,Luke Hayes,Residential,Spring Hill,37174,2024-02-08,Inactive,One-time,Google Search,Premium
+259,Elijah Diaz,Residential,Nashville,37211,2023-02-21,Active,Recurring,Referral,Estate/Commercial
+260,Elijah Morgan,Residential,Nolensville,37135,2022-10-24,Active,One-time,Referral,Estate/Commercial
+261,Lucas Parker,Residential,Nashville,37211,2021-11-20,Active,Recurring,Website,Standard
+262,Harpeth Builders,Commercial,Spring Hill,37174,2023-05-20,Active,Recurring,Nextdoor,Standard
+263,Henry Morgan,Residential,Franklin,37064,2024-03-21,Inactive,Recurring,Google Search,Standard
+264,Jackson Ramos,Residential,Spring Hill,37174,2023-02-19,Active,One-time,Nextdoor,Standard
+265,Levi Turner,Residential,Spring Hill,37174,2021-12-02,Inactive,Recurring,Google Search,Premium
+266,Jack Morgan,Residential,Brentwood,37027,2021-09-13,Active,Recurring,Referral,Standard
+267,Mason Cole,Residential,Nashville,37211,2023-02-10,Active,Recurring,Referral,Estate/Commercial
+268,Lucas Cole,Residential,Nashville,37211,2022-01-24,Active,Recurring,Google Search,Standard
+269,Mateo Flores,Residential,Nolensville,37135,2023-10-28,Active,Recurring,Google Search,Standard
+270,Hudson Gray,Residential,Spring Hill,37174,2023-07-19,Active,Recurring,Facebook,Standard
+271,Levi Brooks,Residential,Franklin,37064,2021-11-12,Active,One-time,Google Search,Standard
+272,Mateo Bailey,Residential,Franklin,37064,2022-07-21,Active,One-time,Nextdoor,Premium
+273,Jack Cole,Residential,Franklin,37064,2023-10-30,Active,One-time,Nextdoor,Standard
+274,Jackson Diaz,Residential,Franklin,37064,2023-12-29,Active,Recurring,Facebook,Premium
+275,Levi Cooper,Residential,Brentwood,37027,2022-10-16,Active,Recurring,Google Search,Standard
+276,Caleb Cooper,Residential,Franklin,37064,2022-01-15,Active,One-time,Google Search,Premium
+277,Mateo Diaz,Residential,Franklin,37064,2022-05-12,Active,One-time,Facebook,Standard
+278,Caleb Cooper,Residential,Brentwood,37027,2024-07-29,Inactive,Recurring,Yard Sign,Standard
+279,Levi Collins,Residential,Franklin,37064,2024-09-30,Active,Recurring,Referral,Standard
+280,Owen Morgan,Residential,Nolensville,37135,2023-09-13,Active,Recurring,Nextdoor,Standard
+281,Logan Gray,Residential,Nashville,37211,2022-04-07,Active,Recurring,Facebook,Standard
+282,Carter Flores,Residential,Spring Hill,37174,2024-02-12,Active,Recurring,Yard Sign,Estate/Commercial
+283,Liam Bennett,Residential,Franklin,37064,2021-10-12,Active,Recurring,Referral,Estate/Commercial
+284,Lucas Morgan,Residential,Nashville,37211,2023-10-16,Active,One-time,Website,Standard
+285,Elijah Bennett,Residential,Spring Hill,37174,2022-09-24,Inactive,One-time,Referral,Premium
+286,Aiden Collins,Residential,Spring Hill,37174,2024-11-13,Active,Recurring,Yard Sign,Standard
+287,Henry Bailey,Residential,Franklin,37064,2023-11-11,Active,Recurring,Referral,Standard
+288,Carter Flores,Residential,Spring Hill,37174,2024-10-20,Active,Recurring,Nextdoor,Standard
+289,Levi Bailey,Residential,Nolensville,37135,2024-03-11,Active,Recurring,Referral,Standard
+290,Noah Hayes,Residential,Nolensville,37135,2024-08-21,Active,Recurring,Facebook,Standard
+291,Henry Ross,Residential,Spring Hill,37174,2024-06-13,Inactive,Recurring,Google Search,Standard
+292,Luke Parker,Residential,Nolensville,37135,2022-02-16,Inactive,Recurring,Nextdoor,Standard
+293,Luke Ross,Residential,Franklin,37064,2022-08-28,Active,Recurring,Referral,Standard
+294,Creek Dental,Commercial,Spring Hill,37174,2023-11-05,Active,Recurring,Facebook,Premium
+295,River Cafe,Commercial,Spring Hill,37174,2023-06-11,Active,Recurring,Referral,Standard
+296,Elijah Bailey,Residential,Franklin,37064,2024-06-04,Inactive,One-time,Google Search,Standard
+297,Magnolia Apartments,Commercial,Nashville,37211,2023-07-13,Active,One-time,Website,Premium
+298,Jack Brooks,Residential,Nashville,37211,2024-03-05,Active,Recurring,Yard Sign,Standard
+299,Caleb Diaz,Residential,Brentwood,37027,2021-07-20,Active,Recurring,Yard Sign,Standard
+300,Caleb Cooper,Residential,Spring Hill,37174,2023-02-21,Inactive,Recurring,Yard Sign,Premium
+301,Henry Diaz,Residential,Franklin,37064,2023-04-28,Inactive,Recurring,Google Search,Premium
+302,Ethan Ross,Residential,Franklin,37064,2022-09-01,Active,Recurring,Website,Estate/Commercial
+303,Carter Ross,Residential,Franklin,37064,2023-08-29,Active,Recurring,Homebuilder/HOA,Premium
+304,Hearth Church,Commercial,Franklin,37064,2023-07-12,Active,Recurring,Nextdoor,Premium
+305,Levi Bennett,Residential,Brentwood,37027,2023-04-25,Active,One-time,Referral,Standard
+306,Hudson Flores,Residential,Nashville,37211,2023-12-31,Active,Recurring,Google Search,Standard
+307,Ethan Ross,Residential,Nolensville,37135,2024-07-01,Active,Recurring,Referral,Standard
+308,Luke Reed,Residential,Brentwood,37027,2023-11-01,Active,Recurring,Google Search,Standard
+309,Ethan Collins,Residential,Franklin,37064,2022-09-08,Active,Recurring,Referral,Standard
+310,Henry Bennett,Residential,Brentwood,37027,2021-12-18,Inactive,One-time,Google Search,Standard
+311,Levi Foster,Residential,Brentwood,37027,2023-07-04,Active,One-time,Referral,Estate/Commercial
+312,Oak Cafe,Commercial,Nashville,37211,2023-09-13,Active,Recurring,Yard Sign,Estate/Commercial
+313,Elijah Gray,Residential,Nolensville,37135,2023-06-03,Active,Recurring,Website,Estate/Commercial
+314,Maple Properties,Commercial,Franklin,37064,2024-04-07,Active,Recurring,Website,Standard
+315,Carter Gray,Residential,Franklin,37064,2024-10-26,Active,One-time,Yard Sign,Standard
+316,Elijah Cooper,Residential,Spring Hill,37174,2024-07-18,Active,Recurring,Website,Estate/Commercial
+317,Henry Cooper,Residential,Nolensville,37135,2024-01-04,Active,Recurring,Google Search,Premium
+318,Liam Diaz,Residential,Nolensville,37135,2023-09-05,Active,Recurring,Referral,Standard
+319,Ethan Flores,Residential,Franklin,37064,2024-01-25,Inactive,Recurring,Yard Sign,Standard
+320,Noah Price,Residential,Nolensville,37135,2023-01-13,Active,Recurring,Google Search,Premium
+321,Caleb Collins,Residential,Nashville,37211,2024-07-24,Inactive,Recurring,Nextdoor,Standard
+322,Noah Parker,Residential,Nolensville,37135,2022-01-24,Active,Recurring,Google Search,Estate/Commercial
+323,Maple Academy,Commercial,Franklin,37064,2023-02-08,Active,Recurring,Google Search,Standard
+324,Ethan Brooks,Residential,Franklin,37064,2021-10-03,Active,Recurring,Referral,Standard
+325,Lucas Morgan,Residential,Nolensville,37135,2023-08-28,Inactive,One-time,Nextdoor,Standard
+326,Lucas Diaz,Residential,Brentwood,37027,2024-11-19,Active,One-time,Nextdoor,Standard
+327,Mason Reed,Residential,Spring Hill,37174,2022-04-01,Active,One-time,Referral,Estate/Commercial
+328,Maple Properties,Commercial,Spring Hill,37174,2024-01-08,Active,Recurring,Google Search,Standard
+329,Hearth Cafe,Commercial,Spring Hill,37174,2022-09-01,Active,Recurring,Referral,Standard
+330,Wyatt Foster,Residential,Franklin,37064,2021-12-23,Active,Recurring,Website,Standard
+331,Hudson Brooks,Residential,Franklin,37064,2023-06-29,Active,Recurring,Referral,Standard
+332,Mason Foster,Residential,Franklin,37064,2023-01-16,Inactive,Recurring,Website,Premium
+333,Owen Murphy,Residential,Nashville,37211,2023-07-14,Active,Recurring,Google Search,Premium
+334,Luke Parker,Residential,Brentwood,37027,2024-05-31,Active,Recurring,Google Search,Standard
+335,Owen Reed,Residential,Brentwood,37027,2021-09-11,Active,Recurring,Google Search,Standard
+336,Elijah Ross,Residential,Nolensville,37135,2024-01-28,Active,Recurring,Google Search,Premium
+337,Hearth Academy,Commercial,Franklin,37064,2021-10-26,Active,One-time,Google Search,Premium
+338,Liam Reed,Residential,Franklin,37064,2021-09-22,Inactive,One-time,Google Search,Standard
+339,Caleb Murphy,Residential,Franklin,37064,2024-09-09,Active,Recurring,Referral,Standard
+340,Hearth Cafe,Commercial,Spring Hill,37174,2022-11-25,Active,Recurring,Facebook,Standard
+341,Hudson Murphy,Residential,Nashville,37211,2024-11-12,Active,Recurring,Website,Standard
+342,Luke Turner,Residential,Brentwood,37027,2022-01-11,Active,Recurring,Referral,Standard
+343,Wyatt Flores,Residential,Franklin,37064,2024-10-15,Active,Recurring,Referral,Premium
+344,Henry Price,Residential,Franklin,37064,2024-01-22,Active,One-time,Yard Sign,Standard
+345,Liam Ramos,Residential,Franklin,37064,2021-07-25,Active,Recurring,Homebuilder/HOA,Standard
+346,Carter Parker,Residential,Nolensville,37135,2024-11-24,Active,One-time,Nextdoor,Standard
+347,Henry Diaz,Residential,Spring Hill,37174,2023-03-14,Active,Recurring,Website,Standard
+348,Mason Bailey,Residential,Spring Hill,37174,2023-04-08,Active,Recurring,Google Search,Standard
+349,Wyatt Cole,Residential,Nolensville,37135,2023-07-05,Active,Recurring,Nextdoor,Estate/Commercial
+350,Lucas Bailey,Residential,Spring Hill,37174,2024-03-28,Active,Recurring,Referral,Standard
+351,Jackson Ramos,Residential,Nolensville,37135,2023-11-29,Active,Recurring,Website,Standard
+352,Logan Brooks,Residential,Franklin,37064,2022-03-16,Active,Recurring,Referral,Estate/Commercial
+353,Jack Diaz,Residential,Nolensville,37135,2023-02-23,Active,Recurring,Google Search,Standard
+354,Levi Bailey,Residential,Spring Hill,37174,2022-10-24,Active,Recurring,Google Search,Standard
+355,Luke Cooper,Residential,Franklin,37064,2021-09-24,Active,Recurring,Google Search,Standard
+356,Carter Morgan,Residential,Brentwood,37027,2023-11-22,Active,Recurring,Google Search,Premium
+357,Liam Cooper,Residential,Franklin,37064,2022-01-23,Active,Recurring,Google Search,Premium
+358,Levi Morgan,Residential,Franklin,37064,2024-12-30,Active,One-time,Website,Standard
+359,Levi Reed,Residential,Nolensville,37135,2024-10-07,Active,Recurring,Google Search,Premium
+360,Hudson Ross,Residential,Franklin,37064,2021-11-02,Active,One-time,Google Search,Standard
+361,Carter Parker,Residential,Nashville,37211,2021-06-26,Active,Recurring,Nextdoor,Standard
+362,James Gray,Residential,Brentwood,37027,2023-06-25,Active,Recurring,Referral,Standard
+363,Jackson Diaz,Residential,Nashville,37211,2023-11-04,Active,Recurring,Google Search,Standard
+364,Maple Market,Commercial,Nolensville,37135,2024-08-07,Active,One-time,Nextdoor,Premium
+365,Logan Gray,Residential,Nolensville,37135,2024-11-01,Active,Recurring,Nextdoor,Standard
+366,Logan Brooks,Residential,Nashville,37211,2023-08-05,Active,Recurring,Google Search,Premium
+367,Logan Flores,Residential,Spring Hill,37174,2024-04-30,Active,Recurring,Website,Standard
+368,Ethan Ramos,Residential,Franklin,37064,2023-01-31,Active,Recurring,Homebuilder/HOA,Standard
+369,Aiden Collins,Residential,Nolensville,37135,2022-07-30,Inactive,Recurring,Yard Sign,Standard
+370,Caleb Bailey,Residential,Nolensville,37135,2022-01-08,Active,Recurring,Website,Premium
+371,James Flores,Residential,Brentwood,37027,2024-08-28,Active,Recurring,Website,Standard
+372,Caleb Diaz,Residential,Brentwood,37027,2024-10-17,Active,Recurring,Facebook,Estate/Commercial
+373,James Cole,Residential,Nolensville,37135,2022-11-30,Active,Recurring,Yard Sign,Standard
+374,Ethan Collins,Residential,Franklin,37064,2022-04-24,Active,Recurring,Facebook,Premium
+375,Owen Morgan,Residential,Brentwood,37027,2022-12-03,Active,Recurring,Facebook,Standard
+376,Elijah Morgan,Residential,Nashville,37211,2023-10-29,Active,Recurring,Facebook,Premium
+377,Owen Reed,Residential,Brentwood,37027,2024-09-06,Active,Recurring,Referral,Premium
+378,Wyatt Diaz,Residential,Brentwood,37027,2023-10-30,Active,Recurring,Google Search,Estate/Commercial
+379,Jack Ramos,Residential,Brentwood,37027,2024-10-28,Active,Recurring,Google Search,Standard
+380,Wyatt Bailey,Residential,Spring Hill,37174,2022-12-18,Active,One-time,Facebook,Standard
+381,Jack Gray,Residential,Nashville,37211,2024-08-10,Active,Recurring,Yard Sign,Premium
+382,River Apartments,Commercial,Franklin,37064,2022-10-09,Active,Recurring,Homebuilder/HOA,Standard
+383,Levi Cooper,Residential,Nashville,37211,2022-07-29,Active,Recurring,Yard Sign,Standard
+384,Willow Cafe,Commercial,Nolensville,37135,2022-07-04,Active,Recurring,Website,Standard
+385,Caleb Murphy,Residential,Franklin,37064,2024-03-05,Active,Recurring,Yard Sign,Premium
+386,Aiden Gray,Residential,Nolensville,37135,2024-10-29,Active,Recurring,Website,Standard
+387,Cedar Apartments,Commercial,Brentwood,37027,2021-10-16,Active,Recurring,Homebuilder/HOA,Standard
+388,Jack Foster,Residential,Nolensville,37135,2023-11-17,Active,Recurring,Referral,Standard
+389,Aiden Hayes,Residential,Franklin,37064,2023-03-14,Active,Recurring,Google Search,Standard
+390,James Cooper,Residential,Franklin,37064,2022-04-22,Active,Recurring,Referral,Standard
+391,Hearth Office Park,Commercial,Franklin,37064,2021-08-15,Active,Recurring,Facebook,Standard
+392,Mateo Brooks,Residential,Brentwood,37027,2023-04-23,Inactive,Recurring,Google Search,Standard
+393,Owen Murphy,Residential,Brentwood,37027,2024-11-09,Active,Recurring,Website,Premium
+394,Cumberland Academy,Commercial,Spring Hill,37174,2024-07-06,Active,Recurring,Google Search,Standard
+395,Owen Morgan,Residential,Nolensville,37135,2021-09-15,Active,Recurring,Referral,Standard
+396,Wyatt Foster,Residential,Spring Hill,37174,2022-03-24,Inactive,Recurring,Google Search,Standard
+397,Owen Parker,Residential,Franklin,37064,2022-09-06,Active,Recurring,Homebuilder/HOA,Standard
+398,Hearth Clinic,Commercial,Spring Hill,37174,2024-08-22,Active,Recurring,Facebook,Standard
+399,Lucas Cooper,Residential,Nashville,37211,2024-06-28,Active,Recurring,Referral,Standard
+400,Noah Turner,Residential,Nolensville,37135,2023-01-07,Inactive,One-time,Website,Standard
+401,Jack Ward,Residential,Nashville,37211,2022-01-28,Active,Recurring,Referral,Standard
+402,Hearth Church,Commercial,Franklin,37064,2022-11-28,Active,Recurring,Website,Standard
+403,James Murphy,Residential,Franklin,37064,2023-03-28,Active,Recurring,Website,Premium
+404,Ethan Reed,Residential,Brentwood,37027,2024-01-23,Active,Recurring,Website,Standard
+405,Owen Diaz,Residential,Spring Hill,37174,2023-12-20,Active,One-time,Referral,Standard
+406,James Cole,Residential,Nashville,37211,2023-07-20,Active,Recurring,Google Search,Standard
+407,Carter Foster,Residential,Franklin,37064,2022-12-28,Active,One-time,Referral,Standard
+408,Noah Cooper,Residential,Brentwood,37027,2023-12-06,Active,Recurring,Referral,Standard
+409,James Murphy,Residential,Brentwood,37027,2022-10-26,Active,Recurring,Website,Premium
+410,Cumberland Builders,Commercial,Spring Hill,37174,2024-09-11,Active,Recurring,Referral,Premium
+411,Elijah Diaz,Residential,Franklin,37064,2022-12-06,Active,Recurring,Website,Estate/Commercial
+412,Liam Reed,Residential,Nashville,37211,2022-02-25,Active,Recurring,Google Search,Premium
+413,Noah Bennett,Residential,Brentwood,37027,2022-02-01,Active,Recurring,Website,Premium
+414,Lucas Reed,Residential,Franklin,37064,2023-01-07,Active,Recurring,Homebuilder/HOA,Standard
+415,Owen Collins,Residential,Spring Hill,37174,2022-09-19,Active,One-time,Yard Sign,Standard
+416,Caleb Murphy,Residential,Brentwood,37027,2024-02-09,Active,Recurring,Referral,Premium
+417,Jack Bailey,Residential,Nolensville,37135,2023-09-28,Active,Recurring,Website,Standard
+418,Hudson Brooks,Residential,Franklin,37064,2022-11-22,Active,Recurring,Google Search,Standard
+419,Hudson Morgan,Residential,Nolensville,37135,2023-05-14,Active,Recurring,Google Search,Premium
+420,Mateo Ross,Residential,Nolensville,37135,2022-04-05,Active,Recurring,Google Search,Premium
