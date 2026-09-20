@@ -1,4 +1,5 @@
 from pathlib import Path
+import runpy
 
 import duckdb
 import pandas as pd
@@ -8,6 +9,7 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
 DB_PATH = ROOT / "hicks_landscaping.duckdb"
+BUILD_SCRIPT = ROOT / "scripts" / "build_duckdb.py"
 
 st.set_page_config(
     page_title="Hicks Analytics | Landscaping Performance Hub",
@@ -73,11 +75,13 @@ st.markdown(
 # -----------------------------
 def require_database():
     if not DB_PATH.exists():
-        st.error(
-            "The DuckDB database was not found. Run "
-            "`python scripts\\build_duckdb.py` from the project folder first."
-        )
-        st.stop()
+        with st.spinner("Preparing the synthetic portfolio data..."):
+            try:
+                runpy.run_path(str(BUILD_SCRIPT), run_name="__main__")
+            except Exception as exc:
+                st.error("The portfolio data could not be prepared. Please try again shortly.")
+                st.exception(exc)
+                st.stop()
 
 
 @st.cache_data
