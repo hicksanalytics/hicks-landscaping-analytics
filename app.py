@@ -59,6 +59,37 @@ st.markdown(
         .insight-card strong {
             font-size: 1.02rem;
         }
+        .story-hero {
+            background: linear-gradient(135deg, rgba(20, 83, 45, .96), rgba(22, 101, 52, .82));
+            color: white;
+            border-radius: 20px;
+            padding: 1.6rem 1.8rem;
+            margin: .4rem 0 1.2rem 0;
+            box-shadow: 0 12px 34px rgba(20, 83, 45, .16);
+        }
+        .story-hero h2 {
+            color: white;
+            margin: 0 0 .45rem 0;
+        }
+        .story-hero p {
+            color: rgba(255, 255, 255, .88);
+            margin: 0;
+            max-width: 820px;
+        }
+        .story-callout {
+            border-left: 5px solid #f59e0b;
+            background: rgba(245, 158, 11, .09);
+            border-radius: 0 14px 14px 0;
+            padding: 1rem 1.15rem;
+            margin: .8rem 0 1.1rem 0;
+        }
+        .story-step {
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-size: .74rem;
+            font-weight: 700;
+            opacity: .62;
+        }
         div[data-testid="stMetric"] {
             border: 1px solid rgba(120,120,120,.18);
             padding: 0.8rem 0.9rem;
@@ -116,30 +147,46 @@ st.sidebar.markdown("## Hicks Analytics")
 st.sidebar.caption("Landscaping Performance Hub")
 st.sidebar.divider()
 
-page = st.sidebar.radio(
-    "View",
-    [
-        "Executive Overview",
-        "Job Profitability",
-        "Crew Performance",
-        "Sales & Estimates",
-    ],
-)
-
-date_range = st.sidebar.date_input(
-    "Completed date",
-    value=(min_date, max_date),
-    min_value=min_date,
-    max_value=max_date,
+experience = st.sidebar.radio(
+    "Experience",
+    ["Guided Demo", "Explore Dashboard"],
+    help="Follow a business story or explore the complete dashboard.",
 )
 
 all_cities = sorted(jobs["city"].dropna().unique().tolist())
 all_services = sorted(jobs["service_name"].dropna().unique().tolist())
 all_crews = sorted(jobs["crew_name"].dropna().unique().tolist())
 
-selected_cities = st.sidebar.multiselect("City", all_cities, default=all_cities)
-selected_services = st.sidebar.multiselect("Service", all_services, default=all_services)
-selected_crews = st.sidebar.multiselect("Crew", all_crews, default=all_crews)
+if experience == "Guided Demo":
+    page = "Guided Demo"
+    date_range = (min_date, max_date)
+    selected_cities = all_cities
+    selected_services = all_services
+    selected_crews = all_crews
+    st.sidebar.info(
+        "You are in the guided owner story. Switch to Explore Dashboard for filters and detailed views."
+    )
+else:
+    page = st.sidebar.radio(
+        "View",
+        [
+            "Executive Overview",
+            "Job Profitability",
+            "Crew Performance",
+            "Sales & Estimates",
+        ],
+    )
+
+    date_range = st.sidebar.date_input(
+        "Completed date",
+        value=(min_date, max_date),
+        min_value=min_date,
+        max_value=max_date,
+    )
+
+    selected_cities = st.sidebar.multiselect("City", all_cities, default=all_cities)
+    selected_services = st.sidebar.multiselect("Service", all_services, default=all_services)
+    selected_crews = st.sidebar.multiselect("Crew", all_crews, default=all_crews)
 
 st.sidebar.divider()
 st.sidebar.caption("Portfolio demo • Synthetic Middle Tennessee data")
@@ -213,10 +260,313 @@ def metric_values(df):
     return revenue, gross_profit, margin, jobs_completed, avg_job, rev_per_hour
 
 
+def crew_summary(df):
+    return (
+        df.groupby("crew_name")
+        .agg(
+            Jobs=("job_id", "count"),
+            Revenue=("billed_revenue", "sum"),
+            Gross_Profit=("gross_profit", "sum"),
+            Labor_Hours=("actual_labor_hours", "sum"),
+            Labor_Variance_Hours=("labor_variance_hours", "sum"),
+            Avg_Labor_Variance=("labor_variance_pct", "mean"),
+            Rework_Rate=("rework_flag", "mean"),
+            Rework_Jobs=("rework_flag", "sum"),
+        )
+        .assign(
+            Gross_Margin=lambda x: x["Gross_Profit"] / x["Revenue"],
+            Revenue_Per_Labor_Hour=lambda x: x["Revenue"] / x["Labor_Hours"],
+        )
+        .reset_index()
+    )
+
+
+def change_story_step(delta):
+    st.session_state.story_step = min(4, max(0, st.session_state.story_step + delta))
+
+
+def story_navigation(step):
+    st.write("")
+    left, middle, right = st.columns([1, 2.4, 1])
+    with left:
+        if step > 0:
+            st.button(
+                "← Previous",
+                width="stretch",
+                on_click=change_story_step,
+                args=(-1,),
+            )
+    with middle:
+        st.progress(step / 4, text=f"Guided story · Step {step + 1} of 5")
+    with right:
+        if step < 4:
+            st.button(
+                "Next →",
+                type="primary",
+                width="stretch",
+                on_click=change_story_step,
+                args=(1,),
+            )
+
+
+def render_guided_demo(df):
+    if "story_step" not in st.session_state:
+        st.session_state.story_step = 0
+
+    # The final month is intentionally excluded because the synthetic data only
+    # contains a partial month. This keeps the story's comparisons honest.
+    story_df = df[df["completed_month"] < df["completed_month"].max()].copy()
+    crew = crew_summary(story_df)
+    focus = crew.sort_values("Avg_Labor_Variance", ascending=False).iloc[0]
+    focus_jobs = story_df[story_df["crew_name"] == focus["crew_name"]].copy()
+    portfolio_margin = story_df["gross_profit"].sum() / story_df["billed_revenue"].sum()
+    best_margin = crew.sort_values("Gross_Margin", ascending=False).iloc[0]
+    step = st.session_state.story_step
+
+    headline()
+    st.markdown(
+        """
+        <div class="story-hero">
+            <div class="story-step">Interactive owner story</div>
+            <h2>We're busy—but where is the profit going?</h2>
+            <p>Step into the owner's seat, follow the warning signs, find the operational leak, and test a decision before taking action.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    if step == 0:
+        st.subheader("Your Monday-morning question")
+        st.markdown(
+            """
+            The schedule is full and crews are working hard. But activity alone does not tell you
+            whether the company is becoming healthier. Your goal is to find the part of the operation
+            where labor hours are quietly eroding profit.
+            """
+        )
+
+        revenue, gross_profit, margin, jobs_completed, _, _ = metric_values(story_df)
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Revenue reviewed", money(revenue), border=True)
+        c2.metric("Gross profit", money(gross_profit), border=True)
+        c3.metric("Portfolio margin", pct(margin), border=True)
+        c4.metric("Completed jobs", f"{jobs_completed:,}", border=True)
+
+        st.markdown(
+            """
+            <div class="story-callout">
+                <strong>Your mission:</strong> identify which crew needs attention, understand why,
+                and estimate the value of correcting the problem.
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    elif step == 1:
+        st.subheader("The warning sign")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Crew needing attention", focus["crew_name"], border=True)
+        c2.metric("Labor variance", pct(focus["Avg_Labor_Variance"]), border=True)
+        c3.metric("Crew margin", pct(focus["Gross_Margin"]), border=True)
+        c4.metric(
+            "Gap vs portfolio",
+            f"{(focus['Gross_Margin'] - portfolio_margin) * 100:+.1f} pts",
+            border=True,
+        )
+
+        chart_data = crew.sort_values("Gross_Margin").copy()
+        chart_data["Status"] = chart_data["crew_name"].apply(
+            lambda name: "Investigate" if name == focus["crew_name"] else "Other crews"
+        )
+        fig = px.bar(
+            chart_data,
+            x="Gross_Margin",
+            y="crew_name",
+            color="Status",
+            orientation="h",
+            title="Gross Margin by Crew",
+            color_discrete_map={"Investigate": "#f59e0b", "Other crews": "#166534"},
+        )
+        fig.update_xaxes(tickformat=".0%")
+        st.plotly_chart(style_chart(fig, 390), width="stretch")
+        st.markdown(
+            f"""
+            <div class="story-callout">
+                <strong>What the owner should notice:</strong> {focus['crew_name']} produces meaningful
+                revenue, but its margin trails {best_margin['crew_name']} by
+                <strong>{(best_margin['Gross_Margin'] - focus['Gross_Margin']) * 100:.1f} points</strong>.
+                The next question is whether pricing, materials, or labor is responsible.
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    elif step == 2:
+        st.subheader("Follow the evidence")
+        c1, c2 = st.columns([1.25, 1])
+        with c1:
+            fig = px.scatter(
+                crew,
+                x="Avg_Labor_Variance",
+                y="Gross_Margin",
+                size="Revenue",
+                color="Rework_Rate",
+                text="crew_name",
+                title="Labor Overruns vs Gross Margin",
+                color_continuous_scale="YlOrRd",
+            )
+            fig.update_xaxes(tickformat=".0%", title="Average labor variance")
+            fig.update_yaxes(tickformat=".0%", title="Gross margin")
+            fig.update_traces(textposition="top center")
+            st.plotly_chart(style_chart(fig, 420), width="stretch")
+        with c2:
+            positive_overrun = focus_jobs["labor_variance_hours"].clip(lower=0).sum()
+            st.metric("Excess labor hours", f"{positive_overrun:,.0f}", border=True)
+            st.metric("Rework rate", pct(focus["Rework_Rate"]), border=True)
+            st.metric(
+                "Revenue / labor hour",
+                money(focus["Revenue_Per_Labor_Hour"]),
+                border=True,
+            )
+            st.markdown(
+                f"""
+                <div class="story-callout">
+                    <strong>Diagnosis:</strong> {focus['crew_name']} is the clear operational outlier.
+                    Its jobs run over estimated labor by {focus['Avg_Labor_Variance']:.1%} on average,
+                    and its rework rate is {focus['Rework_Rate']:.1%}. This points to estimating,
+                    crew execution, or job-scoping—not a lack of demand.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+    elif step == 3:
+        st.subheader("Test a decision before making it")
+        st.caption(
+            f"Model the effect of coaching and tighter job scoping for {focus['crew_name']}. "
+            "The estimate uses the crew's observed labor cost and positive labor overruns."
+        )
+        recovery_rate = st.slider(
+            "Share of excess labor hours recovered",
+            min_value=10,
+            max_value=75,
+            value=40,
+            step=5,
+            format="%d%%",
+        )
+        rework_reduction = st.slider(
+            "Reduction in rework jobs",
+            min_value=0,
+            max_value=50,
+            value=25,
+            step=5,
+            format="%d%%",
+        )
+
+        excess_hours = focus_jobs["labor_variance_hours"].clip(lower=0).sum()
+        labor_rate = focus_jobs["labor_cost"].sum() / focus_jobs["actual_labor_hours"].sum()
+        recovered_hours = excess_hours * recovery_rate / 100
+        period_savings = recovered_hours * labor_rate
+        months = max(1, story_df["completed_month"].nunique())
+        annual_savings = period_savings / months * 12
+        avoided_rework = round(focus["Rework_Jobs"] * rework_reduction / 100)
+        improved_margin = (
+            focus["Gross_Profit"] + period_savings
+        ) / focus["Revenue"]
+
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Hours recovered", f"{recovered_hours:,.0f}", border=True)
+        c2.metric("Annualized profit impact", money(annual_savings), border=True)
+        c3.metric(
+            "Modeled crew margin",
+            pct(improved_margin),
+            delta=f"{(improved_margin - focus['Gross_Margin']) * 100:.1f} pts",
+            border=True,
+        )
+        c4.metric("Rework jobs avoided", f"{avoided_rework:,}", border=True)
+
+        comparison = pd.DataFrame(
+            {
+                "Scenario": ["Current", "Modeled"],
+                "Gross Margin": [focus["Gross_Margin"], improved_margin],
+            }
+        )
+        fig = px.bar(
+            comparison,
+            x="Scenario",
+            y="Gross Margin",
+            color="Scenario",
+            title="Current vs Modeled Crew Margin",
+            color_discrete_map={"Current": "#94a3b8", "Modeled": "#166534"},
+        )
+        fig.update_yaxes(tickformat=".0%")
+        fig.update_layout(showlegend=False)
+        st.plotly_chart(style_chart(fig, 340), width="stretch")
+        st.caption(
+            "Illustrative scenario based on synthetic portfolio data. It is a decision aid, not a guaranteed forecast."
+        )
+
+    else:
+        st.subheader("Turn the insight into an operating plan")
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.markdown(
+                """
+                <div class="insight-card">
+                    <strong>1 · Diagnose</strong><br><br>
+                    Review the highest-variance jobs by service, estimator, and crew. Confirm whether the issue begins in the estimate or in field execution.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        with c2:
+            st.markdown(
+                """
+                <div class="insight-card">
+                    <strong>2 · Act</strong><br><br>
+                    Tighten job scopes, coach the crew on repeat problem services, and add a weekly exception review for jobs running over plan.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        with c3:
+            st.markdown(
+                """
+                <div class="insight-card">
+                    <strong>3 · Measure</strong><br><br>
+                    Track labor variance, rework, margin, and revenue per labor hour to verify that the change creates durable improvement.
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+        st.success(
+            "This is the Hicks Analytics approach: connect operating data, surface the decision, "
+            "quantify the opportunity, and build a repeatable management rhythm."
+        )
+        action1, action2, _ = st.columns([1.2, 1.25, 2])
+        with action1:
+            st.link_button(
+                "Build this for my business",
+                "https://hicksanalytics.com/#contact",
+                type="primary",
+                width="stretch",
+            )
+        with action2:
+            if st.button("Restart the story", width="stretch"):
+                st.session_state.story_step = 0
+                st.rerun()
+
+    story_navigation(step)
+
+
 # -----------------------------
-# Executive Overview
+# Guided Demo / Executive Overview
 # -----------------------------
-if page == "Executive Overview":
+if page == "Guided Demo":
+    render_guided_demo(filtered)
+
+elif page == "Executive Overview":
     headline()
 
     revenue, gross_profit, margin, jobs_completed, avg_job, rev_per_hour = metric_values(filtered)

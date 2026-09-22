@@ -92,6 +92,11 @@ outputs/
 
 See `docs/dashboard_blueprint.md`.
 
+The Streamlit app opens in **Guided Demo** mode, a five-step owner story that lets a
+prospect identify a labor-efficiency problem, investigate the cause, model an
+improvement, and review an action plan. **Explore Dashboard** preserves the full
+self-service experience and detailed filters.
+
 Recommended first dashboard pages:
 
 1. Executive Overview
