@@ -1,0 +1,13 @@
+{
+  "name": "hicks-landscaping-assistant",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-29",
+  "assets": {"directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*"]},
+  "workers_dev": false,
+  "routes": [{"pattern": "landscapingai.hicksanalytics.com", "custom_domain": true}],
+  "ratelimits": [
+    {"name": "USER_RATE", "namespace_id": "927301", "simple": {"limit": 5, "period": 60}},
+    {"name": "SITE_RATE", "namespace_id": "927302", "simple": {"limit": 60, "period": 60}}
+  ],
+  "vars": {"OPENAI_MODEL": "gpt-6-sol"}
+}

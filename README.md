@@ -74,6 +74,7 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 python scripts/build_duckdb.py
+streamlit run app.py
 ```
 
 This creates:
@@ -96,6 +97,27 @@ The Streamlit app opens in **Guided Demo** mode, a five-step owner story that le
 prospect identify a labor-efficiency problem, investigate the cause, model an
 improvement, and review an action plan. **Explore Dashboard** preserves the full
 self-service experience and detailed filters.
+
+### Ask the Data · AI analyst
+
+The sidebar's **Ask the Data** experience lets visitors ask questions about the
+fictional business. The model chooses from three application-owned tools:
+`analyze_jobs`, `low_margin_jobs`, and `estimate_conversion`. The server builds
+parameterized DuckDB queries against approved analytics marts and shows each
+tool result under **See the data lookups**. Visitors do not supply executable
+SQL. Job analysis excludes the incomplete September 2026 data.
+
+Set `OPENAI_API_KEY` in the server environment or Streamlit secrets to enable
+the assistant. Optionally set `OPENAI_MODEL` (default `gpt-6-sol`). Never put an
+API key in JavaScript, committed secrets, or a static Cloudflare deployment.
+The UI allows ten questions per session and three API rounds per question; this
+is a demonstration limit, **not** a robust public rate limit. Before enabling
+unrestricted public traffic, add an edge/server rate limit and a spending cap.
+
+The current `landscapingdemo.hicksanalytics.com` Cloudflare deployment is a
+separate static build. Updating this Streamlit repository does not publish the
+assistant there. A Cloudflare deployment needs a server-side Worker/API and a
+chat UI wired to that API; this Python module cannot run inside a static page.
 
 Recommended first dashboard pages:
 
